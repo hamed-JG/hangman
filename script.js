@@ -7,6 +7,7 @@ let mistakes = 0;
 function selectRandomItem() {
   randomItem = secretWord[Math.floor(Math.random() * secretWord.length)];
   document.getElementById("letters").addEventListener("click", buttonHandler);
+  window.addEventListener("keydown", keyHandler);
   console.log(randomItem);
 }
 
@@ -55,6 +56,9 @@ function letterHandler(letter) {
 }
 function buttonHandler(event) {
   letterHandler(event.target.id);
+}
+function keyHandler(event) {
+  letterHandler(event.key);
 }
 
 selectRandomItem();
