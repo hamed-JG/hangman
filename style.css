@@ -71,7 +71,7 @@ section#image {
 Display the message when the game is over. 
 Hide it at the beginning. 
 */
-section#gameover p {
+section#gameOver p {
    text-align: center;
    font-size: 1rem;
    display: none;
